@@ -3,21 +3,23 @@ body{
     background-color: #f4f4f4;
     paddind: 30px;
     color: #333;
-    background-image: url('./img/city.jpg');
+    /* background-image: url('./img/city.jpg');
     background-image-position: center;
-    background-image-size: cover;
+    background-image-size: cover; */
+    background-color: white;
     
 }
 
 .app{
     max-width: 600px;
-    margin: 5% auto 300px;
-    background-color: #efefef;
+    margin: 2% auto 300px;
+    background-color: #fff;
     padding: 20px 30px;
-    border-radius: 10px
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 };
 
-h1{
+.title{
     text-align: center;
 }
 
@@ -31,6 +33,17 @@ p{
 
 input {
     box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+
+}
+
+select{
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+
 }
 
 button{
@@ -84,3 +97,50 @@ input, select{
     border-radius: 3px;
     width:100%;
 }
+
+.filter, .search{
+    border-bottom: 1px solid #555;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.filter{
+    display: flex;
+    gap: 25px
+}
+
+
+
+.filter-options {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-top: 8px;
+    div {
+        flex: 1 1 0
+    }
+
+    .status{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+    
+        select{
+            height: 25px;
+            margin-top: 10px
+        }
+    
+    }
+
+    .ordem{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+    }
+
+}
+
